@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+
+  },
+  "publishOptions": {
+    "include": [
+      "LocalDynamo"
+    ]
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "AWSSDK.DynamoDBv2": "3.2.6-beta"
+      }
+    }
+  }
+}
